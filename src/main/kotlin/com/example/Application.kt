@@ -35,7 +35,6 @@ fun Application.module() {
         }, module {
             single<NotesRepository> { NotesRepoImpl(get()) }
         })
-
     }
     routing {
         swaggerUI(path = "swagger-ui", swaggerFile = "openapi/documentation.yaml") {
